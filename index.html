@@ -44,7 +44,34 @@
   .quick-example:hover {
     grid-template-rows: 1fr;
   }
-  
+
+
+    .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two equal columns */
+    gap: 20px; /* Adjust the gap between images */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius:0.5cm;
+}
+.img1{
+    border-radius: 0.5px;
+    width: 22rem;
+    height: 29rem;
+    display: block;
+    margin: 0 auto;
+
+}
+.ai_name{
+    text-align: center;
+    font-size: 42px;
+}
+.ai_used{
+  text-align: center;
+}
   
   </style>
   <div class="imgc">
@@ -81,6 +108,29 @@
           <p style="text-align: center;"> I  got 8 rank in a hackthon names as 'Web Ka Hackthon' organized by team 7 held in Lovely Professional University, Jalandhar</p>
         </div>
       </div>
+
+    <h1 class="ai_used"><b>Ai Used</b></h1>
+
+      <div class="img1">
+        <img src="img_ai.png" alt="Image 1">     
+    </div>
+    <div class="image-grid">
+        <a href="https://gemini.google.com/app?hl=en-IN">
+            <img src="google_ai.png" alt="Image 1">
+        </a>
+        
+        <a href="https://claude.ai/login?returnTo=%2F%3F">
+            <img src="claude_ai.png" alt="Image 2">
+        </a>
+        
+        <a href="https://copilot.microsoft.com/">
+            <img src="cop_ai.jpg" alt="Image 3">
+        </a>
+        <p class="ai_name">Gemini Ai</p>
+        <p class="ai_name">claude Ai</p>
+        <p class="ai_name">Copilot Ai</p>
+        
+    </div>
 </body>
 </html>
 
